@@ -1,0 +1,119 @@
+* {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#refresh{
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+#refresh img{
+  height: 30px;
+  width: 30px;
+  transition: transform .5s;
+}
+#refresh img:hover {
+  transform: rotate(180deg);
+}
+
+#last-updated{
+  margin: 15px;
+  text-align: center;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+  color: white;
+}
+
+.main-section {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.disabled-geolocation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.disabled-geolocation button{
+  background-image: linear-gradient(92.88deg, #384c92 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  margin: 5rem;
+  height: 3rem;
+  padding: 0 1.6rem;
+  border-style: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  text-align: center;
+  transition: all .5s;
+}
+
+.disabled-geolocation button:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+
+.location,
+.temperature {
+  height: 30vh;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location icon{
+  align-items: baseline;
+}
+
+.temperature {
+  flex-direction: column;
+}
+
+#degree-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#degree-section span {
+  margin: 10px;
+  font-size: 30px;
+}
+
+#degree-section h2 {
+  font-size: 40px;
+}
+
+
+@media (max-width:410px){
+  .location,
+  .temperature {
+    width: 88%;
+  }
+
+  body{
+    font-size: 88%;
+  }
+}

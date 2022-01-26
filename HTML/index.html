@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script src="../JS/app.js" defer></script>
+    <script src="../JS/skycons.js"></script>
+  </head>
+  <body>
+    <section class="main-section">
+      <button id="refresh"><img src="../icons/refresh.png" /></button>
+      <h5 id="last-updated">Last Updated:</h5>
+
+      <div class="location">
+        <h1 id="location-timezone">Town Name</h1>
+        <canvas id="icon" width="128" height="128"></canvas>
+      </div>
+
+      <div class="temperature">
+        <div id="degree-section">
+          <h2 id="temperature-degree"></h2>
+          <span id="unit">C</span>
+        </div>
+        <div id="temperature-feels-like">
+          <h3>It feels like:</h3>
+        </div>
+        <div id="temperature-description">
+          <h4></h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="disabled-geolocation">
+        <h1>You must enable geo location services to use this app!</h1>
+        <button onClick="window.location.reload();">Reload Page!</button>
+    </section>
+  </body>
+</html>
